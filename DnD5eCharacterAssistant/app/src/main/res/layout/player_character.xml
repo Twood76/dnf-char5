@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_charName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_str"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Str"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_dex"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Dex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_str"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_con"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Con"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_dex"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_intel"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Int"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_con"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_wis"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_intel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_cha"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Cha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_wis"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_strCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="175dp"
+        android:text="Str Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_dexCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Dex Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_strCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_conCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Con Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_dexCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_intCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Int   Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_conCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_wisCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Wis Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_intCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_chaCheck"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Cha Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_wisCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_str"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_returnToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Return to Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Level"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_charName"
+        app:layout_constraintTop_toTopOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_strSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:text="Str Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_strCheck"
+        app:layout_constraintTop_toTopOf="@+id/b_strCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_dexSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Dex Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_dexCheck"
+        app:layout_constraintTop_toBottomOf="@+id/b_strSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_conSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Con Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_conCheck"
+        app:layout_constraintTop_toBottomOf="@+id/b_dexSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_intelSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Int Save"
+        app:layout_constraintBottom_toTopOf="@+id/b_returnToMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_intCheck"
+        app:layout_constraintTop_toBottomOf="@+id/b_conSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_wisSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Wis Save"
+        app:layout_constraintBottom_toTopOf="@+id/b_returnToMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_wisCheck"
+        app:layout_constraintTop_toBottomOf="@+id/b_intelSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_chaSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Cha Save"
+        app:layout_constraintBottom_toTopOf="@+id/b_returnToMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_chaCheck"
+        app:layout_constraintTop_toBottomOf="@+id/b_wisSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_passivePer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Passive Per"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_lvl"
+        app:layout_constraintTop_toTopOf="@+id/tv_charName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_initiative"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Initiative"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_dexSave"
+        app:layout_constraintTop_toBottomOf="@+id/b_strSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch_advRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advantage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/b_strSave"
+        app:layout_constraintTop_toTopOf="@+id/b_strSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_advRoll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/b_strSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/switch_dadvRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Disadvantage"
+        app:layout_constraintEnd_toEndOf="@+id/switch_advRoll"
+        app:layout_constraintTop_toBottomOf="@+id/switch_advRoll" />
+
+    <Spinner
+        android:id="@+id/spinner_atkTypes"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_intelSave" />
+
+    <Button
+        android:id="@+id/b_attack"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Attack"
+        app:layout_constraintEnd_toEndOf="@+id/b_initiative"
+        app:layout_constraintTop_toTopOf="@+id/b_conSave" />
+
+    <Button
+        android:id="@+id/b_damage"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Damage"
+        app:layout_constraintEnd_toEndOf="@+id/b_initiative"
+        app:layout_constraintTop_toTopOf="@+id/b_wisSave" />
+
+    <Spinner
+        android:id="@+id/spinner_damage"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_chaSave" />
+
+    <TextView
+        android:id="@+id/tv_damage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/b_strSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_str"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_damageModifier"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Modifier"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b_chaSave"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_damage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
