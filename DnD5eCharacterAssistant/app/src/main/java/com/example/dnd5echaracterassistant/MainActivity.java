@@ -189,10 +189,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(R.id.b_signOut).setVisibility(View.GONE);
             findViewById(R.id.b_toUserMain).setVisibility(View.GONE);
 
+            /*
             findViewById(R.id.b_createCharacter).setEnabled(isCharCreate);
             if(isCharCreate) {
                 findViewById(R.id.b_toUseChar).setVisibility(View.GONE);
             }
+            */
         }
     }
     private void sendEmailVerification() {
